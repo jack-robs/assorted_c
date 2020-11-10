@@ -1,0 +1,86 @@
+
+johnr00@johnr00:~/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell$ clang shell.c -o shell
+shell.c:289:13: warning: implicit declaration of function wait is invalid in
+      C99 [-Wimplicit-function-declaration]
+            wait(NULL);
+            ^
+1 warning generated.
+johnr00@johnr00:~/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell$ ./shell 
+Terminate by pressing CTRL-C
+
+
+Supported commands:
+* showme - list contents of directory
+* killme <file> - delete file
+* myuse - disk mem use
+* makeme <file> - make a file
+* showproc - show running processes
+* game - a FUN FUN GAME
+* help - display help 
+* cd <directory> please - MUST ADD PLEASE TO END. 
+change up: cd .. please
+change down: cd <Name if in current dir> please
+* exit -leaves shell
+
+Running myShell
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> showme
+README.md  a.out  cited.txt  shell  shell.c  shell.png test.txt
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> makeme test.txt
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> showme         
+README.md  a.out  cited.txt  shell  shell.c  shell.png test.txt
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> killme text.txt
+/bin/rm: cannot remove text.txt: No such file or directory
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> game   
+play game!
+Loading.
+Loading...
+Loading....
+Loading.....
+A random number will be generated in the background each round.
+You have 4 methods to guess correctly, each worth different points.
+-Divisible by 2: 1 point.
+-Divisible by 3: 3 points.
+-Divisible by 7: 10 points.
+-Divislbe by 11: 22 points.
+You will lose the same amount of points if you guess wrong. All players start with 23 points.
+Enter a single number for your guess, example: `Guess> 7` will guess divisible by 7
+Game ends at less than 0, or WINS at 40
+Example of game play:
+Points: 23. (Background random number: 199232121). 
+Guess> 2.
+Result: wrong, -1 pts,
+Points:22.
+
+
+enter> q to quit
+
+Debug: 43543903
+Current Points: 23
+Guess> q
+lose!
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> unknown commmand
+
+
+Cur Dir: /home/johnr00/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell
+mini-shell> exit
+johnr00@johnr00:~/school/classes/spr_20/cs5007/repo/cs5007_jmr/Assignment3_Shell$ uname -a
+Linux johnr00 4.15.0-88-generic #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+

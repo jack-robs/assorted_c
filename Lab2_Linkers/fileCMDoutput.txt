@@ -1,0 +1,1 @@
+libsecret.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=9befd859fdec49f6af9da4afe60a62d59474d13e, not stripped
